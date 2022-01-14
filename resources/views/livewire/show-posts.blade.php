@@ -9,7 +9,6 @@
         <x-table>
             <div class="px-6 py-4 flex items-center">
                 <x-jet-input class="flex-1 mr-3" placeholder="Escriba lo que desea buscar" type="text" wire:model="search" />
-
                 @livewire('create-post')
             </div>
             @if ($posts->count())
