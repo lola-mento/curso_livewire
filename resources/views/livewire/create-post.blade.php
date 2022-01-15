@@ -26,9 +26,10 @@
                 Cancelar
             </x-jet-secondary-button>
 
-            <x-jet-danger-button wire:click="save">
+            <x-jet-danger-button wire:click="save" wire:loading.remove wire:target="save">
                 Crear post
             </x-jet-danger-button>
+            <span wire:loading wire:target="save">Cargando ...</span>
         </x-slot>
 
 

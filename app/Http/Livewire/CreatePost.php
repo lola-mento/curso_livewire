@@ -10,8 +10,8 @@ class CreatePost extends Component
     public $open = false;
     public $title,$content;
     protected $rules = [
-        'title' => 'required|max:10',
-        'content' => 'required|max:100'
+        'title' => 'required',
+        'content' => 'required'
     ];
 
     public function updated($propertyName)
